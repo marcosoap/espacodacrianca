@@ -1,4 +1,5 @@
 section#sponsors {
+  background: white;
   & > section + section {
     margin-top: 20px;
   }
@@ -6,5 +7,11 @@ section#sponsors {
   article {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  article img {
+    border: 0px;
+    width: 200px;
+    margin-left: 35px;  
   }
 }

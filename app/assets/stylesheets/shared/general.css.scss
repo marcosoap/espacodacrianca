@@ -9,6 +9,16 @@ body .container > section {
 
   header h1 {
     text-align: center;
+    margin-top: 0px;
     font-size: 32px;
+    font-family: "Helvetica" sans-serif;
   }
+}
+
+section article img {
+  border: 1px solid #ccc;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
