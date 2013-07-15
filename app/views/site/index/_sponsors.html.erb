@@ -1,0 +1,29 @@
+<section id="sponsors">
+  <header class="row">
+    <h1 class="span12">Quem nos ajuda bastante!</h1>
+  </header>
+
+  <section class="row">
+    <% (1..4).to_a.each do |index| %>
+      <article>
+        <%= image_tag "sponsors/logo_#{index}.jpg", :class => "span3" %>
+      </article>
+    <% end %>
+  </section>
+
+  <section class="row">
+    <% (5..8).to_a.each do |index| %>
+      <article>
+        <%= image_tag "sponsors/logo_#{index}.jpg", :class => "span3" %>
+      </article>
+      <% end %>
+  </section>
+
+  <section class="row">
+    <% (9..11).to_a.each do |index| %>
+      <article>
+        <%= image_tag "sponsors/logo_#{index}.jpg", :class => "span3" %>
+      </article>
+    <% end %>
+  </section>
+</section>

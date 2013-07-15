@@ -1,0 +1,10 @@
+section#sponsors {
+  & > section + section {
+    margin-top: 20px;
+  }
+
+  article {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
