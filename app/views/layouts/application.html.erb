@@ -11,5 +11,43 @@
 
 <%= yield %>
 
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <%= image_tag "logo.png" %>
+      </div>
+
+      <div class="span9">
+        <ul>
+          <li>
+            <%= image_tag "icons/blogger.png" %>
+            <%= link_to "Blog", "http://espacocrianca-arh.blogspot.com.br/", :target => "_blank" %>
+          </li>
+
+          <li>
+            <%= image_tag "icons/facebook.png" %>
+            <%= link_to "Facebook", "https://www.facebook.com/espacodacrianca.arh" %>
+          </li>
+
+          <li>
+            <%= image_tag "icons/youtube.png" %>
+            <%= link_to "Youtube", "http://www.youtube.com/user/EspacoCriancaARH" %>
+          </li>
+          
+          <li>
+            <%= image_tag "icons/email.png" %>
+            <%= link_to "arhcrianca@gmail.com", "mailto:arhcrianca@gmail.com", :target => "_blank" %>
+          </li>
+          
+          <li>
+            <%= image_tag "icons/phone.png" %>
+            +55 (81) 3231-1402
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,21 @@
+footer {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background-size: cover;
+  background: url(../../assets/footer_background.jpg);
+
+  ul, li {
+    list-style: none;
+    color: #e0e0e0;
+  }
+
+  li + li {
+    margin-top: 7px;
+  }
+
+  li img {
+    width: 24px;
+    margin-right: 7px;
+  }
+}
