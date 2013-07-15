@@ -1,9 +1,23 @@
-<header id="banner">
-</header>
+<nav id="top_nav">
+  <div class="container">
+    <ul>
+      <li><%= link_to "Início", "#banner" %></li>
+      <li><%= link_to "Atividades", "#activities" %></li>
+      <li><%= link_to "História", "#history" %></li>
+      <li><%= link_to "Patrocínio", "#sponsors" %></li>
+    </ul>
+  </div>
+</nav>
 
-<%= render "site/index/intro" %>
-<%= render "site/index/activities" %>
-<%= render "site/index/facebook" %>
-<%= render "site/index/history" %>
 
-<%= render "site/index/sponsors" %>
+<div class="container">
+  <header id="banner">
+  </header>
+
+  <%= render "site/index/intro" %>
+  <%= render "site/index/activities" %>
+  <%= render "site/index/facebook" %>
+  <%= render "site/index/history" %>
+  
+  <%= render "site/index/sponsors" %>
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <title>Espacodacrianca</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -9,12 +9,7 @@
 <body>
 <%= render "shared/facebook_api" %>
 
-<nav id="top_nav">
-</nav>
-
-<div class="container">
-  <%= yield %>
-</div>
+<%= yield %>
 
 </body>
 </html>
