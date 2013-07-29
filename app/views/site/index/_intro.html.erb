@@ -5,8 +5,8 @@
 
   <section class="row">
     <article class="span4">
-      <%= image_tag "logo.png" %>
-      <h1>A instituição<h1>
+      <%= link_to image_tag("logo.png"), "/quem_somos" %>
+      <h1><%= link_to "A instituição", "/quem_somos" %><h1>
     </article>
     <article class="span4">
       <%= image_tag "intro_2.jpg" %>

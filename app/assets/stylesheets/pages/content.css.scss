@@ -1,10 +1,14 @@
-div#history {
-  article h1 {
-    font-size: 22px;
+div.content {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 }
 
-div#history section.photos {
+section.photos {
   color: #666;
   font-size: 12px;
 
