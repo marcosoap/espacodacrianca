@@ -1,0 +1,25 @@
+div#donate header#banner {
+  background: url(../../assets/pages/donate/banner.png);
+  height: 660px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 45px;
+}
+
+div#donate {
+  article {
+    background: orange;
+    text-align: center;
+    padding: 20px;
+    border: 3px dashed black;
+  }
+
+  article h3{
+    font-size: 18px;
+    color: dark-orange;
+  }
+
+  aside {
+    margin-top: 40px;
+  }
+}

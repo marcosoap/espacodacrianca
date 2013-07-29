@@ -1,0 +1,83 @@
+<nav id="top_nav">
+  <div class="container">
+    <nav>
+      <%= link_to image_tag("logo.png"), root_path %>
+      <ul>
+        <li><%= link_to "Voltar ao Topo", "#banner" %></li>
+        <li><%= link_to "Dados da Instituição", "#dados_da_instituicao" %></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+<div id="how_to_help">
+  <div class="container">
+    <header id="banner">
+    </header>
+
+    <section id="intro">
+      <header class="row">
+        <h1 class="span12">Como ajudar</h1>
+      </header>
+
+      <section class="row">
+        <div class="content span12">
+          <p>
+            A colaboração da sociedade civil é a única fonte de recursos do Espaço da Criança-ARH. Dado que o trabalho desenvolvido pela instituição é contínuo, cada contribuição é valiosa, independentemente da duração, do aporte e da natureza do auxílio.
+          </p>
+          <p>
+            Veja de que formas você pode ajudar:
+          </p>
+        </div>
+      </section>
+    
+      <article class="row content">
+        <div class="span2">
+          <%= image_tag "pages/how_to_help/help_1.png" %>
+        </div>
+        <div class="span6">
+          <h1>Faça uma doação online</h1>
+          <p>
+            Com apenas 3 cliques você garantirá a continuidade da nossa missão. <%= link_to "Doe online aqui!", "/doe_online" %>
+          </p>
+        </div>
+      </article>
+    
+      <article class="row content">
+        <div class="span2">
+          <%= image_tag "pages/how_to_help/help_2.png" %>
+        </div>
+        <div class="span6">
+          <h1>Adote um projeto</h1>
+          <p>
+            Sua empresa pode apoiar um dos projetos executados pelo Espaço da Criança-ARH nas áreas de educação, cidadania, higiene, profissionalização e geração de renda.  Sua responsabilidade social faz a diferença!
+          </p>
+        </div>
+      </article>
+    
+      <article class="row content">
+        <div class="span2">
+          <%= image_tag "pages/how_to_help/help_3.png" %>
+        </div>
+        <div class="span6">
+          <h1>Seja um voluntário</h1>
+          <p>
+            Promova em sua empresa, igreja ou grupo de amigos um dia de voluntariado na instituição.
+          </p>
+        </div>
+      </article>
+    
+      <article class="row content">
+        <div class="span2">
+          <%= image_tag "pages/how_to_help/help_4.png" %>
+        </div>
+        <div class="span6">
+          <h1>Faça uma festa!</h1>
+          <p>
+            Organize uma festa nas datas especiais, comemorativas e aniversários para alegrar nossas crianças.
+          </p>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
