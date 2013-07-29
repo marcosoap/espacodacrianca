@@ -1,8 +1,12 @@
 <nav id="top_nav">
   <div class="container">
-    <ul>
-      <li><%= link_to "< Voltar para a página principal", root_path %></li>
-    </ul>
+    <nav>
+      <%= link_to image_tag("logo.png"), root_path %>
+      <ul>
+        <li><%= link_to "Voltar ao Topo", "#banner" %></li>
+        <li><%= link_to "Dados da Instituição", "#dados_da_instituicao" %></li>
+      </ul>
+    </nav>
   </div>
 </nav>
 
@@ -45,7 +49,7 @@
             Ao oferecer a essas crianças em condição de risco um ambiente saudável e seguro, a instituição tem como missão mantê-las a salvo dos efeitos danosos engendrados pela violência, pela criminalidade e pelo abandono que povoam seu ambiente cotidiano e restaurar sua perspectiva de inserção plena e cidadã na sociedade.
           </p>
 
-          <h2>Dados da instituição:</h2>
+          <h2 id="dados_da_instituicao">Dados da instituição:</h2>
 
           <p>
             <b>Razão social:</b> Associação para a Restauração do Homem (ARH)<br />

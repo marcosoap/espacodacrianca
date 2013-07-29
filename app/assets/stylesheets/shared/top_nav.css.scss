@@ -1,13 +1,24 @@
 nav#top_nav {
   height: 45px;
-  background: rgb(255,113,0);
+  background: url(/assets/top_nav_background.png);
   position: fixed;
   width: 100%;
   z-index: 100;
+  vertical-align: top;
+  border-bottom: 1px solid #666;
+
+  img {
+    height: 64px;
+    margin: 0px 20px;
+    border-left: 1px solid #666;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+  }
 
   ul {
     padding: 0px;
     margin: 0px;
+    vertical-align: top;
   }
 
   ul, li {
