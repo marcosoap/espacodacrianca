@@ -1,5 +1,5 @@
 #who_we_are header#banner {
-  background: url(../../assets/pages/who_we_are/banner.png);
+  background: url(<%= image_path "pages/who_we_are/banner.png" %>);
   height: 478px;
   background-size: cover;
   background-position: 50% 50%;
