@@ -3,6 +3,10 @@ class SiteController < ApplicationController
   end
 
   def page
-    render params[:page_name]
+    if params[:section]
+      render "site/#{params[:section]}/#{params[:page_name]}"
+    else
+      render params[:page_name]
+    end
   end
 end

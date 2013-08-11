@@ -1,0 +1,60 @@
+<nav id="top_nav">
+  <div class="container">
+    <nav>
+      <%= link_to image_tag("logo.jpg"), root_path %>
+      <ul>
+        <li><%= link_to "Início", root_path %></li>
+        <li>|</li>
+        <li><%= "Atividades:" %></li>
+        <li><%= link_to "Comunidade", "/atividades/comunidade" %></li>
+        <li><%= link_to "Famílias", "/atividades/familias" %></li>
+        <li><%= link_to "Crianças", "/atividades/criancas" %></li>
+        <li><%= link_to "Quero ajudar", "/como_ajudar" %></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+<div id="comunity_activities">
+  <div class="container">
+    <section id="intro">
+      <section class="row">
+        <div class="content span8">
+          <h1>Atividades com as Crianças</h1>
+          <p>
+            O Espaço da Criança-ARH atende atualmente cerca de 100 crianças carentes de 4 a 12 anos das comunidades dos Coelhos e entorno. Elas dividem-se em dois grupos de 50 cada, indo à instituição no turno oposto ao da escola. 
+          </p>
+          <p>
+            Na casa, cada aluno recebe duas refeições, totalizando 200 refeições servidas por dia. Voluntários dão aulas de leitura, arte, dança, recreação, música, reforço escolar, iniciação à informática e religião, completando uma carga horária diária de quatro horas.
+          </p>
+          <p>
+            Desde 2013, o Espaço da Criança-ARH adota a metodologia de ensino <%= link_to "Educação por Princípios", "http://espacocrianca-arh.blogspot.com.br/2013/06/espaco-da-crianca-arh-implementa.html" %>. Desenvolvida nos EUA e presente há 20 anos no Brasil, trata-se de uma abordagem transversal que permeia todas as disciplinas escolares para ensinar aos alunos sete princípios comportamentais: Autogoverno, Aliança, Individualidade, Semeadura e Colheita, Caráter, Mordomia e Soberania. 
+          </p>
+          <p>
+            Dada a frágil estrutura das relações familiares das crianças, esse método se propõe a resgatar a os valores essenciais ao seu desenvolvimento e à vida em sociedade.
+          </p>
+          <p>
+            As crianças e suas famílias também recebem o apoio do setor psicossocial, que as acompanha, executa visitas domiciliares, trabalhos individuais e em grupos operativos. Quando da admissão de um novo aluno na entidade, é feita uma anamnese social e psicológica que engloba a estrutura da família e suas condições de vida, bem como o quadro psicológico dos seus integrantes. 
+          </p>
+          <p>
+            A partir dessa sondagem, a equipe do Espaço da Criança-ARH elabora um perfil de atendimento aos infantes e a suas famílias. O setor também promove palestras e reuniões mensais para discutir o desenvolvimento das crianças com os seus genitores.
+          </p>
+        </div>
+
+        <section class="photos span4">
+          <div class="row">
+            <article class="span4">
+              <%= image_tag "activities/criancas_1.jpg" %>
+            </article>
+            <article class="span4">
+              <%= image_tag "activities/criancas_2.jpg" %>
+            </article>
+            <article class="span4">
+              <%= image_tag "activities/criancas_3.jpg" %>
+            </article>
+          </div>
+        </section>
+      </section>
+    </section>
+  </div>
+</div>

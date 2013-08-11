@@ -1,39 +1,30 @@
 <section id="activities">
   <header class="row">
-    <h1 class="span12">Conheça nossas atividades:</h1>
+    <h1 class="span12">Conheça nossas atividades</h1>
   </header>
 
-  <section class="row">
-    <article class="span4">
-      <%= image_tag "activities/activity_1.jpg" %>
-      <h1>Reforço escolar</h1>
-    </article>
-
-    <article class="span4">
-      <%= image_tag "activities/activity_2.jpg" %>
-      <h1>Alfabetização</h1>
-    </article>
-
-    <article class="span4">
-      <%= image_tag "activities/activity_3.jpg" %>
-      <h1>Informática</h1>
-    </article>
-  </section>
 
   <section class="row">
-    <article class="span4">
-      <%= image_tag "activities/activity_4.jpg" %>
-      <h1>Refeição</h1>
-    </article>
+    <div class="span4 offset2">
+      <%= image_tag "activities/graphic.png" %>
+    </div>
+    <nav class="span6">
+      <p>
+        Desde sua fundação, as atividades do Espaço da Criança-ARH focaram a criança, a redução de sua vulnerabilidade e garantia dos seus direitos fundamentais.
+      </p>
 
-    <article class="span4">
-      <%= image_tag "activities/activity_5.jpg" %>
-      <h1>Diversão</h1>
-    </article>
+      <p>
+        Hoje, a instituição possui um escopo de trabalho ampliado, abrangendo, além da criança, sua família e a comunidade, por entender que estas são as principais influências em seu desenvolvimento.
+      </p>
 
-    <article class="span4">
-      <%= image_tag "activities/activity_6.jpg" %>
-      <h1>Esportes</h1>
-    </article>
+      <p>
+        Essa abordagem holística permite um trabalho mais integrado e duradouro, que produz resultados na criança e em seu lar.
+      </p>
+      <ul>
+        <li><%= link_to "Comunidade", "/atividades/comunidade" %></li>
+        <li><%= link_to "Famílias", "/atividades/famílias" %></li>
+        <li><%= link_to "Crianças", "/atividades/crianças" %></li>
+      <ul>
+    </nav>
   </section>
 </section>

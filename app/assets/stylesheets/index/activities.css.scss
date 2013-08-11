@@ -1,18 +1,5 @@
 section#activities {
-  article { 
-    text-align: center;
-  }
-
-  article h1 {
-    font-size: 22px;
-  }
-
-  article img {
-    width: 100%;
-    border: 1px solid #ccc;
-
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+  li a {
+    font-size: 24px;
   }
 }
