@@ -8,6 +8,21 @@
 <body>
 <%= render "shared/facebook_api" %>
 
+<nav id="top_nav">
+  <div class="container">
+    <nav>
+      <%= link_to image_tag("logo.jpg"), root_path %>
+      <ul>
+        <li><%= link_to "Início", root_path %></li>
+        <li><%= link_to "Atividades", "/#activities" %></li>
+        <li><%= link_to "História", "/#history" %></li>
+        <li><%= link_to "Patrocínio", "/#sponsors" %></li>
+        <li><%= link_to "Como ajudar", "/como_ajudar" %></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
 <%= yield %>
 
 <footer>
