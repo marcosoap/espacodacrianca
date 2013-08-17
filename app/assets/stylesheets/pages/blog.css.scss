@@ -1,0 +1,33 @@
+#blog {
+  aside {
+    color: #aaa;
+    font-size: 16px;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+}
+
+#blog article {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 60px;
+
+  & + article {
+    padding-top: 60px;
+    border-top: 1px solid #fff;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+  }
+
+  aside {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+}

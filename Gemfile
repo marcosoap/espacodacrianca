@@ -10,12 +10,15 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 
-gem 'rspec-rails'
+gem 'feedzirra'
 
 group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  gem 'rspec-rails'
+end
 
 group :test, :development do
   gem 'pry'
