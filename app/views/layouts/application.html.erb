@@ -16,6 +16,7 @@
         <li><%= link_to "Início", root_path %></li>
         <li><%= link_to "Atividades", "/#activities" %></li>
         <li><%= link_to "História", "/#history" %></li>
+        <li><%= link_to "Videos", "/#video" %></li>
         <li><%= link_to "Patrocínio", "/#sponsors" %></li>
         <li><%= link_to "Como ajudar", "/como_ajudar" %></li>
         <li><%= link_to "Notícias", "/blog" %></li>
@@ -37,22 +38,22 @@
         <ul>
           <li>
             <%= image_tag "icons/blogger.png" %>
-            <%= link_to "Blog", "http://espacocrianca-arh.blogspot.com.br/", :target => "_blank" %>
+            <%= link_to "Blog", "http://espacocrianca-arh.blogspot.com.br/", target: :_blank %>
           </li>
 
           <li>
             <%= image_tag "icons/facebook.png" %>
-            <%= link_to "Facebook", "https://www.facebook.com/espacodacrianca.arh" %>
+            <%= link_to "Facebook", "https://www.facebook.com/espacodacrianca.arh", target: :_blank %>
           </li>
 
           <li>
             <%= image_tag "icons/youtube.png" %>
-            <%= link_to "Youtube", "http://www.youtube.com/user/EspacoCriancaARH" %>
+            <%= link_to "Youtube", "http://www.youtube.com/user/EspacoCriancaARH", target: :_blank %>
           </li>
           
           <li>
             <%= image_tag "icons/email.png" %>
-            <%= link_to "arhcrianca@gmail.com", "mailto:arhcrianca@gmail.com", :target => "_blank" %>
+            <%= link_to "arhcrianca@gmail.com", "mailto:arhcrianca@gmail.com", target: :_blank %>
           </li>
           
           <li>
