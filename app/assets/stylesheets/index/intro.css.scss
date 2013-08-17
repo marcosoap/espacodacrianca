@@ -12,3 +12,8 @@ div#index section#intro {
     font-size: 22px;
   }
 }
+
+div#index .container > section {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+}

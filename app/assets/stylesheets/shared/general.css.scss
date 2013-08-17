@@ -8,8 +8,6 @@ body {
 
 body .container > section {
   padding: 50px 0px;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #fff;
 
   header {
     margin-bottom: 30px;
@@ -30,6 +28,11 @@ section article img {
   border-radius: 3px;
 }
 
+header#banner + #intro {
+  margin-top: 0px;
+}
+
 section#intro {
   margin-top: 60px;
+  border: 0px;
 }
