@@ -1,11 +1,12 @@
 div#index section#intro {
+  background: white; 
 
   article {
     text-align: center;
   }
 
   article img {
-    width: 100%
+    width: 100%;
   }
 
   article h1 {
@@ -13,7 +14,11 @@ div#index section#intro {
   }
 }
 
-div#index .container > section {
+div#index > section {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #fff;
+}
+
+div#index header#banner + #intro {
+  margin-top: 0px;
 }
