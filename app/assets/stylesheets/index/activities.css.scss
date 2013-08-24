@@ -2,6 +2,17 @@ section#activities {
   color: white;
   background: #609aeb;
 
+  h1 a {
+    color: #ffff99;
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  h1 {
+    color: #ffff99;
+    line-height: inherit;
+  }
+
   li a {
     font-size: 24px;
     color: #ccc;

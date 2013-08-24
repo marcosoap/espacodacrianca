@@ -6,27 +6,29 @@
 
 
     <section class="row">
-      <div class="span4 offset2">
-        <%= image_tag "activities/graphic.png" %>
-      </div>
-      <nav class="span6">
-        <p>
-          Desde sua fundação, as atividades do Espaço da Criança-ARH focaram a criança, a redução de sua vulnerabilidade e garantia dos seus direitos fundamentais.
-        </p>
-
-        <p>
-          Hoje, a instituição possui um escopo de trabalho ampliado, abrangendo, além da criança, sua família e a comunidade, por entender que estas são as principais influências em seu desenvolvimento.
-        </p>
-
-        <p>
-          Essa abordagem holística permite um trabalho mais integrado e duradouro, que produz resultados na criança e em seu lar.
-        </p>
-        <ul>
-          <li><%= link_to "Comunidade", "/atividades/comunidade" %></li>
-          <li><%= link_to "Famílias", "/atividades/familias" %></li>
-          <li><%= link_to "Crianças", "/atividades/criancas" %></li>
-        <ul>
-      </nav>
+      <article class="span4">
+        <%= link_to image_tag("activities/comunidade_index.jpg"), "/atividades/comunidade" %>
+        <h1><%= link_to "Comunidades", "/atividades/comunidade" %><h1>
+      </article>
+      <article class="span4">
+        <%= link_to image_tag("activities/familias_index.jpg"), "/atividades/familias" %>
+        <h1><%= link_to "Famílias", "/atividades/familias" %><h1>
+      </article>
+      <article class="span4">
+        <%= link_to image_tag("activities/criancas_index.jpg"), "/atividades/criancas" %>
+        <h1><%= link_to "Crianças", "/atividades/criancas" %><h1>
+      </article>
+    </section>
+    <section class="row text">
+      <article class="span4">
+        Desde sua fundação, as atividades do Espaço da Criança-ARH focaram a criança, a redução de sua vulnerabilidade e garantia dos seus direitos fundamentais.
+      </article>
+      <article class="span4">
+        Hoje, a instituição possui um escopo de trabalho ampliado, abrangendo, além da criança, sua família e a comunidade, por entender que estas são as principais influências em seu desenvolvimento.
+      </article>
+      <article class="span4">
+        Essa abordagem holística permite um trabalho mais integrado e duradouro, que produz resultados na criança e em seu lar.
+      </article>
     </section>
   </div>
 </section>
