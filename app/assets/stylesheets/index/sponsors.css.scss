@@ -9,9 +9,12 @@ section#sponsors {
     vertical-align: middle;
   }
 
+  article a {
+    display: inline-block;
+  }
+
   article img {
     border: 0px;
     width: 200px;
-    margin-left: 35px;  
   }
 }
