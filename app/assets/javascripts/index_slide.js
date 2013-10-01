@@ -10,25 +10,47 @@ EDC.slider = {
   },
 
   nextIndex: function() {
+    var index;
     if (EDC.slider.totalSlides() === EDC.slider.index) {
-      EDC.slider.index = 1;
+      index = 1;
     } else {
-      EDC.slider.index += 1;
+      index = EDC.slider.index + 1;
     }
 
-    return EDC.slider.index;
+    return index;
+  },
+
+  startAnimation: function() {
+    EDC.slider.animate = setInterval(EDC.slider.change, 5000);
+  },
+
+  stopAnimation: function() {
+    clearInterval(EDC.slider.animate);
   },
 
   change: function(newIndex) {
+    EDC.slider.stopAnimation();
+
     EDC.slider.index = newIndex || EDC.slider.nextIndex();
     var slideClass = "slide" + EDC.slider.index;
     var slideSelector = ".slide." + slideClass;
 
     $(".slide").fadeOut(2000);
     $(slideSelector).fadeIn(2000);
+    $(EDC.slider.bannerSelector + " nav li a").removeClass("selected");
+    $(EDC.slider.bannerSelector + " nav li a[data-slide=" + EDC.slider.index + "]").addClass("selected");
+
+    EDC.slider.startAnimation();
   }
 }
 
 $(document).ready(function() {
-  setInterval(EDC.slider.change, 5000);
+  EDC.slider.startAnimation();
+
+  $(EDC.slider.bannerSelector).find("nav a").click(function(e) {
+    e.preventDefault();
+    var index = $(this).data("slide");
+  
+    EDC.slider.change(index);
+  });
 })

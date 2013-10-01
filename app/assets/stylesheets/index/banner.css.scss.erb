@@ -1,5 +1,4 @@
 div#index header#banner {
-
   height: 478px;
 
   .slide {
@@ -40,5 +39,39 @@ div#index header#banner {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+  }
+
+  nav {
+    position: absolute;
+    z-index: 100;
+    margin-top: 438px;
+    width: 100%;
+    text-align: right;
+  }
+
+  nav ul li,
+  nav ul li a {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    background: #4567a2;
+    color: white;
+    padding: 7px 16px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  
+    &:hover {
+      text-decoration: none;
+      background: #e78b24;
+    }
+
+    &.selected {
+      background: #e78b24;
+    }
   }
 }

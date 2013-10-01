@@ -51,6 +51,15 @@
         </div>
       </div>
     </div>
+
+    <nav>
+      <ul class="container">
+        <li><%= link_to "1", "#", "data-slide" => 1, :class => :selected %></li>
+        <li><%= link_to "2", "#", "data-slide" => 2 %></li>
+        <li><%= link_to "3", "#", "data-slide" => 3 %></li>
+        <li><%= link_to "4", "#", "data-slide" => 4 %></li>
+      </ul>
+    </nav>
   </header>
 
   <%= render "site/index/intro" %>
