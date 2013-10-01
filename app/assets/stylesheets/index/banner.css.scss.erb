@@ -1,8 +1,36 @@
 div#index header#banner {
-  background: url(<%= image_path "banner_1.jpg" %>);
+
   height: 478px;
-  background-size: cover;
-  background-position: 50% 50%;
+
+  .slide {
+    background-size: cover;
+    background-position: 50% 50%;
+    display: none;
+    height: 478px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .slide1 {
+    display: block;
+    background-image: url(<%= image_path "index/slide1.jpg" %>);
+  }
+
+
+  .slide2 {
+    background-image: url(<%= image_path "index/slide2.jpg" %>);
+    background-position: 70% 70%;
+  }
+
+
+  .slide3 {
+    background-image: url(<%= image_path "index/slide3.jpg" %>);
+  }
+
+
+  .slide4 {
+    background-image: url(<%= image_path "index/slide4.jpg" %>);
+  }
 
   div.text {
     margin-top: 120px;
