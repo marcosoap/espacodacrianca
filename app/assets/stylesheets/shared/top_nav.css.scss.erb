@@ -29,7 +29,8 @@ nav#top_nav {
     color: white;
   }
 
-  li a {
+  li a,
+  li span {
     display: inline-block;
     height: 35px;
     padding-top: 10px;
@@ -50,5 +51,29 @@ nav#top_nav {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+  }
+
+  li ul {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #666;
+    margin-left: -10px;
+
+    border-top: #ff6400;
+  }
+
+  li ul li {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    background: #ff6400;
+  }
+
+  li ul li a {
+    padding-left: 10px; 
+    padding-right: 10px;
+    min-width: 100px; 
   }
 }

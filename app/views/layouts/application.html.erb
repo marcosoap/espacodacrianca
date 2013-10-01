@@ -3,6 +3,8 @@
 <head>
   <title>Espacodacrianca</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application" %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -14,12 +16,31 @@
       <%= link_to image_tag("logo.jpg"), root_path %>
       <ul>
         <li><%= link_to "Início", root_path %></li>
-        <li><%= link_to "Atividades", "/#activities" %></li>
-        <li><%= link_to "História", "/historia" %></li>
-        <li><%= link_to "Multimídia", "/multimidia" %></li>
-        <li><%= link_to "Patrocínio", "/#sponsors" %></li>
-        <li><%= link_to "Localização", "/#location" %></li>
-        <li><%= link_to "Notícias", "/blog" %></li>
+        <li class="about_us menu">
+          <span>Sobre nós</span>
+          <ul>
+            <li><%= link_to "Quem somos", "/quem_somos" %></li>
+            <li><%= link_to "Nossa história", "/historia" %></li>
+          </ul>
+        </li>
+        <li  class="activities menu">
+          <span>Atividades</span>
+          <ul>
+            <li><%= link_to "Crianças", "/atividades/criancas" %></li>
+            <li><%= link_to "Famílias", "/atividades/familias" %></li>
+            <li><%= link_to "Comunidade", "/atividades/comunidade" %></li>
+          </ul>
+        </li>
+        <li  class="news menu">
+          <span>Notícias & Mídia</span>
+          <ul>
+            <li><%= link_to "Notícias", "/blog" %></li>
+            <li><%= link_to "Fotos e vídeos", "/fotos_e_videos" %></li>
+            <li><%= link_to "Revista institucional", "/revista" %></li>
+          </ul>
+        </li>
+        <li><%= link_to "Contato", "/#location" %></li>
+        <li><%= link_to "Parceiros", "/#sponsors" %></li>
       </ul>
 
       <%= link_to "Como ajudar?", "/como_ajudar", id: :how_to_help_btn %>
