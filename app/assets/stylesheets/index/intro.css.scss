@@ -1,5 +1,6 @@
 div#index section#intro {
-  background: white; 
+  background: white;
+  padding-top: 60px; 
 
   article {
     text-align: center;
@@ -11,6 +12,13 @@ div#index section#intro {
 
   article h1 {
     font-size: 22px;
+    margin: 0px;
+  }
+
+  article header {
+    font-size: 52px;
+    line-height: 1.5;
+    padding-top: 50px;
   }
 }
 

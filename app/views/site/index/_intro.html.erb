@@ -1,22 +1,27 @@
 <section id="intro">
   <div class="container">
-    <header>
-      <h1>Espaço da Criança - A.R.H.</h1>
-    </header>
-
     <section class="row">
-      <article class="span4">
-        <%= link_to image_tag("logo.jpg"), "/quem_somos" %>
-        <h1><%= link_to "A instituição", "/quem_somos" %><h1>
+      <article class="span10">
+        <header>
+          Através de eventos solidários, levamos à comunidade dos Coelhos cuidados e serviços essenciais.
+        </header>
       </article>
-      <article class="span4">
-        <%= image_tag "intro_2.jpg" %>
-        <h1>O que por aqui?</h1>
-      </article>
-      <article class="span4">
-        <%= link_to image_tag("intro_3.jpg"), "/como_ajudar" %>
-        <h1><%= link_to "Como ajudar", "/como_ajudar" %><h1>
-      </article>
+
+      <div class="span2">
+        <section class="row">
+          <article class="span2">
+            <%= link_to image_tag("logo.jpg"), "/quem_somos" %>
+            <h1><%= link_to "A instituição", "/quem_somos" %><h1>
+          </article>
+        </section>
+
+        <section class="row">
+          <article class="span2">
+            <%= link_to image_tag("intro_3.jpg"), "/como_ajudar" %>
+            <h1><%= link_to "Como ajudar", "/como_ajudar" %><h1>
+          </article>
+        </section>
+      </div>
     </section>
   </div>
 </section>
