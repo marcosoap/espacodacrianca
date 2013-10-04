@@ -11,13 +11,24 @@
       </section>
 
       <div class="row">
-        <div class="content span8">
+        <div class="content span7">
           <h2>Vídeos</h2>
           <iframe width="480" height="360" src="//www.youtube.com/embed/XDN7rI_GPN8?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="text span4">
-          <p>Assista mais vídeos no youtube!</p>
-          <%= link_to image_tag("youtube.png"), "http://www.youtube.com/user/EspacoCriancaARH", target: :_blank %>
+        <div class="text span4 offset1">
+          <p>Assista mais vídeos no <%= link_to "Youtube", "http://www.youtube.com/user/EspacoCriancaARH", target: :_blank %>!</p>
+          <%= link_to image_tag("youtube.png", :class => :logo), "http://www.youtube.com/user/EspacoCriancaARH", target: :_blank %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="content span7">
+          <h2>Fotos</h2>
+          <%= image_tag "pages/photos/fotos.jpg" %>
+        </div>
+        <div class="text span4 offset1">
+          <p>Veja mais fotos do nosso dia a dia no <%= link_to "Facebook", "https://www.facebook.com/espacodacrianca.arh/photos_stream", :target => "_blank" %>!</p>
+          <%= link_to image_tag("facebook.png", :class => :logo), "https://www.facebook.com/espacodacrianca.arh/photos_stream", :target => "_blank" %>
         </div>
       </div>
     </section>
