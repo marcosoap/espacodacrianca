@@ -2,8 +2,8 @@ footer {
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 90px;
-  background: url(<%= image_path "footer_background.jpg" %>);
-  border-top: 2px solid #aaa;
+  background: rgba(65,152,235,.15);
+  border-top: 1px solid #aaa;
   background-size: cover;
 
   ul, li {

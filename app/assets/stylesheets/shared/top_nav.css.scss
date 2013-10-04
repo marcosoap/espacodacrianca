@@ -1,5 +1,5 @@
 nav#top_nav {
-  height: 45px;
+  height: 58px;
   background: #ff6400;
   width: 100%;
   z-index: 100;
@@ -9,7 +9,9 @@ nav#top_nav {
   z-index: 99;
 
   img {
-    height: 64px;
+    background: white;
+    padding: 6px;
+    height: 72px;
     margin-right: 20px;
     border-left: 1px solid #666;
     border-bottom: 1px solid #666;
@@ -34,8 +36,8 @@ nav#top_nav {
   li a,
   li span {
     display: inline-block;
-    height: 35px;
-    padding-top: 10px;
+    height: 39px;
+    padding-top: 18px;
     color: white;
   }
 
@@ -46,7 +48,7 @@ nav#top_nav {
   #how_to_help_btn {
     background: white;
     color: #ff6400;
-    margin-top: 7px;
+    margin-top: 16px;
     float: right;
     padding: 3px 20px;
     height: 25px;
@@ -72,6 +74,7 @@ nav#top_nav {
     margin: 0px;
     padding: 0px;
     background: #ff6400;
+    height: 45px;
   }
 
   li ul li a {
