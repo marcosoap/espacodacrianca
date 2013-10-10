@@ -2,6 +2,7 @@ div#index header#banner {
   height: 478px;
 
   .slide {
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     display: none;
@@ -15,12 +16,11 @@ div#index header#banner {
     background-image: url(<%= image_path "index/slide1.jpg" %>);
   }
 
-
   .slide2 {
     background-image: url(<%= image_path "index/slide2.jpg" %>);
-    background-position: 70% 70%;
-  }
 
+    background-position: 100% 50%;
+  }
 
   .slide3 {
     background-image: url(<%= image_path "index/slide3.jpg" %>);
