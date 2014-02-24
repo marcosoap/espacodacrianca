@@ -6,9 +6,9 @@ class EnglishSiteController < ApplicationController
 
   def page
     if params[:section]
-      render "site/#{params[:section]}/#{params[:page_name]}"
+      render "english_site/#{params[:section]}/#{params[:page_name]}"
     else
-      render params[:page_name]
+      render "english_site/#{params[:page_name]}"
     end
   end
 end

@@ -1,0 +1,30 @@
+<div id="blog">
+  <div class="container">
+    <section id="intro">
+      <section class="row">
+        <div class="content span8">
+          <header>
+            <h1>News</h1>
+            <aside>
+              Read more in <%= link_to "our blog", "http://espacocrianca-arh.blogspot.com.br/", target: "_blank" %> (portuguese).
+            </aside>
+          </header>
+
+          <% Blog.new.first_entries.each do |entry| %>
+            <article>
+              <h1><%= link_to entry.title, entry.url, :target => "_blank" %></h1>
+              <aside><%= entry.published.strftime("%d/%m/%Y") if entry.published %></aside>
+
+              <%= entry.content.html_safe %>
+            </article>
+          <% end %>
+
+          
+          <aside>              
+            Read more in <%= link_to "our blog", "http://espacocrianca-arh.blogspot.com.br/", target: "_blank" %> (portuguese).
+          </aside>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
