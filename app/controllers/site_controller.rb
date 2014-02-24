@@ -1,4 +1,8 @@
 class SiteController < ApplicationController
+  def en_index
+    render "site/en/index"
+  end
+
   def index
   end
 

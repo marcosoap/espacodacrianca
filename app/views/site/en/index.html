@@ -1,0 +1,72 @@
+<div id="index">
+  <header id="banner">
+    <div class="slide1 slide">
+      <div class="container">
+        <div class="row">
+          <div class="text span5">
+            <h1>Welcome</h1>
+            <p>
+              We are a Non-Governmental Organization which has been offering education, food and protection for the last 20 years to children who live in extreme poverty in the underprivileged areas of the city of Recife, as well as supporting their families and communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide2 slide">
+      <div class="container">
+        <div class="row">
+          <div class="text span5">
+            <h1><%= link_to "Change starts here", "/who_we_are" %></h1>
+            <p>
+              Our mission is to help the most vulnerable children and families in Recife realize their potential. We want to show them that they can add value to their own lives, and are to that of their communities. We believe that this change starts here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide3 slide">
+      <div class="container">
+        <div class="row">
+          <div class="text span5">
+            <h1><%= link_to "Change starts here", "#activities" %></h1>
+            <p>
+              We see the potential of each child, family and community. Our holistic approach seeks to promote change in all levels to build a stronger Recife.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide4 slide">
+      <div class="container">
+        <div class="row">
+          <div class="text span5">
+            <h1><%= link_to "Join us", "/how_to_help" %></h1>
+            <p>
+              Help "Espaço da Criança-ARH" transform lives by clicking here to learn about the many ways <%= link_to "you can participate", "/how_to_help" %>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="container">
+        <li><%= link_to "1", "#", "data-slide" => 1, :class => :selected %></li>
+        <li><%= link_to "2", "#", "data-slide" => 2 %></li>
+        <li><%= link_to "3", "#", "data-slide" => 3 %></li>
+        <li><%= link_to "4", "#", "data-slide" => 4 %></li>
+      </ul>
+    </nav>
+  </header>
+
+  <%= render "site/index/intro" %>
+  <%= render "site/index/activities" %>
+  <%= render "site/index/facebook" %>
+  <%= render "site/index/history" %>
+    
+  <%= render "site/index/sponsors" %>
+  <%= render "site/index/location" %>
+</div>
