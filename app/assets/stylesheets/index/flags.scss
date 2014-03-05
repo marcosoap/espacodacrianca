@@ -1,0 +1,34 @@
+nav#languages {
+  div.container {
+    position: relative;
+  }
+
+  ul {
+    background: white;
+    position: absolute;
+    padding: 7px;
+    right: 0px;
+    z-index: 100;
+    box-shadow: 1px 1px 5px #333;
+
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  ul, li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  li + li {
+    margin-left: 7px;
+  }
+
+  img {
+    height: 30px;
+  }
+}
