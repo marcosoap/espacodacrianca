@@ -1,4 +1,4 @@
-require 'feedzirra'
+require 'feedjira'
 
 class Blog
   delegate :title, :url, :feed_url, :etag, :last_modified, to: :feed 
@@ -10,7 +10,7 @@ class Blog
   end
 
   def feed
-    @feed ||= Feedzirra::Feed.fetch_and_parse("http://espacocrianca-arh.blogspot.com/feeds/posts/default")
+    @feed ||= Feedjira::Feed.fetch_and_parse("http://espacocrianca-arh.blogspot.com/feeds/posts/default")
   end
 end
 
